@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>homepage</title>
+<link rel="stylesheet" type="text/css" href="first.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.cycle.all.js"></script>
+
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+$(function(){$('#panel').hide();})
+    $("#login").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<script type="text/javascript">
+$('#slider').cycle({ 
+    fx:     'scrollLeft', 
+    speed:  'slow', 
+    next:   '#next', 
+    prev:   '#prev' 
+});
+</script>
+
+</head>
+<body>
+
+<div id="bar">
+
+<div id="login">LOGIN</div>
+<div id="reg">REGISTER</div>
+<div id="panel">
+<form>
+Username: <input type="text" name="uname"><br>
+Password: <input type="text" name="pwd"><br>
+<button type="button"> GO!</button>
+</form>
+</div>
+
+</div>
+<!--<div class="wrapper">
+
+<div id="slider">
+<img id="1" src="1.jpeg">
+<img id="2" src="2.jpeg">
+<img id="3" src="3.jpeg">
+</div>
+-->
+
+<div id="container">
+<div class="controller" id="prev"></div>
+<div id="slider">
+<img id="11"  src="11.jpeg" height="700px" width="1200px">
+<img id="12" src="12.jpeg"  height="700px" width="1200px">
+<img id="13" src="13.jpeg"  height="700px" width="1200px">
+</div>
+<div class="controller" id="next"></div>
+</div>
+<!--
+<script src="C:\Users\Ankita\Desktop\wt proj\jquery.js"></script>
+<script src="C:\Users\Ankita\Desktop\wt proj\slider.js"></script>
+-->
+</body>
+</html>
+
+
+
+
+

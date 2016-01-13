@@ -1,0 +1,19 @@
+
+echo "called";
+if(isset($_POST['sub_prompt']))
+{
+$new_qty = $_POST['new_qty'];
+echo "new  ".$new_qty;
+$con = new mysqli("localhost","root","","hotels");
+//$x=name1;
+echo "x=".$x;
+//$x=$_POST['name'];
+$sql = "update cart set qty = 7 where item = 'Fry Idli'";
+
+if ($con->query($sql) === TRUE) {
+    echo "Record updated successfully";
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+
+}
